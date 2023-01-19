@@ -1,0 +1,152 @@
+---
+title: "Pengaruh Inflasi Terhadap GDP 6 Negara ASEAN"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Zahra Nuraziza Sudrajat"
+date: 2023-01-19
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+## Pendahuluan
+
+### Latar belakang
+
+GDP *(Gross Domestic Product)* berperan sebagai bagian dari indikator pada pertumbuhan ekonomi suatu negara dengan menghitung pendapatan negara tersebut. Banyak sekali asumsi yang menyatakan bahwa kesejahteraan masyarakat suatu negara berkesinambungan dengan tingkat GDP nya. Semakin tinggi angka produksi maka hasilnya akan bagus sekali untuk pertumbuhan ekonomi suatu negara. Sebaliknya semakin rendah angka produksi akan bernilai negatif yang artinya menurunya tingkat perekonomian suatu negara, maka tinggi dan rendahnya laju pertumbuhan ekonomi di suatu negara akan berdampak kepada kesejahteraan ekonomi masyarakatnya. Pertumbuhan ekonomi juga diukur dengan tinggi rendahnya pendapatan rill perkapita. Pertumbuhan ekonomipun juga bertujuan untuk meningkatkan taraf hidup suatu negara dan pengembangan ekonomi bertujuan untuk meningkatkan produktivitas dengan cara meningkatkan pendapatan rill nasional.
+
+Inflasi selalu berhubungan dengan pertumbuhan ekonomi suatu negara karena inflasi dan pertumbuhan ekonomi adalah dua indikator penting yang saling berkesinambungan. Inflasi terjadi ketika naiknya harga secara umum dan berlangsung terus menerus yang dikarenakan banyaknya jumlah uang beredar yang mengakibatkan nilai mata uang rendah dan nilai tukar jual beli melemah. Kondiri tersebut akan menimbulkan harga kebutuhan naik, para pekerja menuntut kenaikan gaji, bahkan bisa terjadinya kekacauan politik dan ekonomi sebuah negara. Diketahui bahwa inflasi sering kali memberikan dampak buruk terhadap petumbuhan ekonomi yang dapat mengakibatkan ekonomi yang tidak stabil bagi sebuah negara. Secara umum inflasi dan pertumbuhan ekonomi adalah hubungan positif jangka pendek sedangkan jika dilihat dalam jangka waktu panjang hubungan tersebut adalah negatif, jadi inflasi tidak selalu memberi pengaruh buruk. Peran pemerintah sangat berpengaruh terhadap lajunya inflasi dan pertumbuhan ekonomi untuk menangani masalah tersebut sekaligus meningkatkan perekonomian sebuah negara untuk terciptanya kesejahteraan masyarakat.
+
+### Ruang lingkup
+
+Inflasi selalu berkaitan dengan pertumbuhan ekonomi sebuah negara yang artinya semua negara mengalami baik dan buruknya dampak inflasi. Penulis hanya akan membahas keterkaitan pengaruh inflasi terhadap GDP 6 negara ASEAN termasuk Indonesia.
+
+### Rumusan masalah
+
+1.Bagaimana pengaruh inflasi di 6 negara ASEAN ( Indonesia, Brunei Darussalam, Vietnam, Myanmar, Thailand, Singapur ) terhadap GDP masing-masing negara tersebut menurut data World Trade Bank tahun 2017-2021?
+
+2\. Negara manakah yang mempunyai tingkat inflasi terbesar?
+
+### Tujuan dan manfaat penelitian
+
+Tujuan penelitian yang penulis lakukan adalah untuk mengetahui pengaruh inflasi terhadap GDP 6 negara ASEAN dan untuk mengetahui manakah pengaruh inflasi terbesar dari 6 negara ASEAN
+
+Manfaat dari penelitian yang penulis lakukan adalah dapat menambah wawasan dalam bidang ekonomi dan dapat mengembangkan ilmu yang sudah diperoleh selama mengikuti perkuliahan berlangsung dalam waktu 1 semester. Serta penelitian ini diharapkan dapat memberikan informasi kepada pembaca.
+
+### Package
+
+Package yang digunakan dalam penelitian ini adalah :
+
+```{r}
+
+#| warning: false
+
+#| echo: true
+
+setwd('C:/METOPEL')
+library('readxl')
+library('tidyverse')
+
+dat<-read_excel('jarajija.xlsx')
+```
+
+## Studi pustaka
+
+Menurut Lincolin Arsyad (1999) bahwa indikator penting untuk mengetahui kondisi ekonomi di suatu negara dalam periode tertentu yang di tunjukan data PDB atau GDP . Pembangunan ekonomi adalah usaha-usaha untuk meningkatkan taraf hidup suatu bangsa yang seringkali diukur dengan tinggi rendahnya pendapatan rill perkapita (Suparmoko,2002) Pertumbuhan ekonomi adalah kenaikan jangka panjang dalam kemampuan suatu negara untuk menyediakan semakin banyak jenis barang-barang ekonomi kepada penduduknya ( Prof. Kuznets, 2013). Serta menurut Adam Smith (2013) pertumbuhan ekonomi merupakan salah satu tolak ukur penting dalam menentukan keberhasilan pembangunan ekonomi. kebijakan pembangunan yang dilaksanakan berdampak kepada pertumbuhan ekonomi. Oleh karena itu pertumbuhan ekonomi sangat berkaitan dengan proses peningkatan produksi barang dan jasa dalam kegiatan ekonomi masyarakat.
+
+Menurut Murni (2013:202 ) menyatakan bahwa inflasi adalah suatu kejadian yang menunjukan kenaikan tingkat harga secara umum dan berlangsung secara terus menerus. Inflasi terjadi karena suatu masyarakat ingin hidup diluar batas kemampuan ekonominya (Boedino, 1998:170-171). Sering kali inflasi dikaitkan dengan banyaknya jumlah uang yang beredar dari bank sentral, padahal menurut pandangan Keynes (1936) dalam bukunya yang berjudul " *The General Theory of Employment, Interest and Money"* mengatakan bahwa perubahan uang beredar bukanlah satu satunya penyebab inflasi tetapi dipengaruhi oleh pengeluaran konsumsi, investasi, pengeluaran pemerintah dan pengurangan pajak. Teori tersebut di dukung dengan perkataan Gubernur Bank Indonesia, Perry Warjiyo mengungkapkan pelemahan konsumsi yang kemudian berdampak pada penurunan tingkat inflasi menjadi perhatian bank sentral. Serta menurut Burdekin et,al. (2000) menyatakan bahwa tingkat inflasi yang dapat menurunkan pertumbuhan ekonomi adalah pada tahap 3 % bagi negara sedang membangun, manakala 8% bagi negara industri.
+
+**Metode penelitian**
+
+### Data
+
+|      Negara       | Tahun |   Inflasi    |     GDP     |
+|:-----------------:|:-----:|:------------:|:-----------:|
+|     Indonesia     | 2017  | 4,292678122  | 1,01562E+12 |
+| Brunei Darussalam | 2017  | 4,953690289  | 12128104859 |
+|      Vietnam      | 2017  | 4,362930138  | 2,81354E+11 |
+|      Myanmar      | 2017  | 5,372901021  | 61449392056 |
+|     Thailand      | 2017  |  1,89994499  | 4,56357E+11 |
+|     Singapore     | 2017  | 2,801874745  | 3,43193E+11 |
+|     Indonesia     | 2018  | 3,818323569  | 1,04227E+12 |
+| Brunei Darussalam | 2018  | 9,217653488  | 13567351175 |
+|      Vietnam      | 2018  |  3,62665301  | 3,10106E+11 |
+|      Myanmar      | 2018  | 5,445659436  | 67144725831 |
+|     Thailand      | 2018  | 1,428586164  | 5,06755E+11 |
+|     Singapore     | 2018  |  3,50682904  | 3,76998E+11 |
+|     Indonesia     | 2019  |  1,5984885   | 1,1191E+12  |
+| Brunei Darussalam | 2019  | -3,335767975 | 13469422959 |
+|      Vietnam      | 2019  | 2,423207531  | 3,34365E+11 |
+|      Myanmar      | 2019  | 6,265218659  | 68697759361 |
+|     Thailand      | 2019  | 0,997091607  | 5,44081E+11 |
+|     Singapore     | 2019  | -0,359222235 | 3,75473E+11 |
+|     Indonesia     | 2020  | -0,436578123 | 1,05869E+12 |
+| Brunei Darussalam | 2020  | -10,86375964 | 12005825759 |
+|      Vietnam      | 2020  | 1,467486618  | 3,46616E+11 |
+|      Myanmar      | 2020  | 3,844254536  | 78930257227 |
+|     Thailand      | 2020  | -1,318658155 | 4,99682E+11 |
+|     Singapore     | 2020  | -2,972168094 | 3,45296E+11 |
+|     Indonesia     | 2021  | 6,015274347  | 1,18609E+12 |
+| Brunei Darussalam | 2021  | 15,46592853  | 14006569576 |
+|      Vietnam      | 2021  | 2,778272945  | 3,66138E+11 |
+|      Myanmar      | 2021  | 4,802555004  | 65091751273 |
+|     Thailand      | 2021  | 1,902052266  | 5,05947E+11 |
+|     Singapore     | 2021  | 4,032514223  | 3,96987E+11 |
+
+![](poltekapp.jpg)
+
+penelitian ini menggunakan data World Trade Bank
+
+```{r}
+library(readxl)
+dat<-read_excel("jarajija.xlsx")
+head(dat)
+```
+
+### Metode analisis
+
+Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 2 variabel independen. Penelitian ini merbaksud mencari hubungan antara Inflasi dan GDP . Spesifikasi yang dilakukan adalah:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah Inflasi dan $x_t$ adalah GDP.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+Inflasi selalu berpengaruh terhadap GDP yang menjadi indikator dalam pertumbuhan ekonomi. untuk itu peranan pemerintah penting sekali terhadap lajunya inflasi dan pertumbuhan ekonomi agar terciptanya kesejahteraan masyarakat. Seperti yang kita ketahui bahwa inflasi tidak selalu membawa dampak buruk melaikan juga membawa dampak baik bagi sebuah negara sesuai dengan tingkat persen Inflasi tersebut. Inflasi ringan kurang dari 10 tahun, inflasi sedang antara 10-30% per tahun, inflasi berat 30 - 100 % per tahun, hiperinflasi sudah lebih dari 100%. Oleh karena itu penelitian ini hanya menghubungkan tingkat inflasi terhadap GDP pada tahun 2017-2021.
+
+### Analisis masalah
+
+Hasil regresinya adalah
+
+```{r}
+reg1<-lm(gdp~inf,data=dat)
+summary(reg1) 
+```
+
+```{r}
+plot(dat$gdp,dat$inf,xlab="gdp",ylab="inf")
+```
+
+## Kesimpulan
+
+Dari hasil regresi diatas dapat diketahui bahwa inflasi sangat berpengaruh terhadap GDP 6 negara ASEAN termasuk Indonesia, Brunei Darussalam, Vietnam, Myanmar, Thailand, Singapura sebesar -7.293e+09 ( Rp 7.239.000.000.000) yang artinya tingginya inflasi menyebabkan GDP menurun.
+
+**Saran**
+
+Sebaiknya setiap 6 negara ASEAN mengupayakan agar inflasi nya semakin menurun karena akan berpengaruh terhadap pertumbuhan ekonomi demi terjaminya kesejahteraan suatu negara.
+
+## Referensi
+
+Lincolin Arsyad (2014, h 24) Ekonomi Pembangunan, Yogyakarta: Bagian Penerbitan Sekolah Tinggi Ilmu Ekonomi YKPN.
+
+Adam Smith (2013. h.49) Teori Pertumbuhan Ekonomi Perencanaan dan Pembangunan, Jakarta: PT. Raja Grafindo Persada.
+
+Keynes (1936 ) " *The General Theory of Employment, Interest and Money"*
+
+World Trade Bank. GDP ( current US\$ )
+
+World Trade Bank. Inflation
